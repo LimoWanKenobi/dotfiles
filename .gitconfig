@@ -1,4 +1,6 @@
 [alias]
+	# just because I am so used to it
+	co = checkout
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
