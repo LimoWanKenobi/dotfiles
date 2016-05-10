@@ -81,6 +81,21 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ./brew.sh
 ```
 
+### Update Bash
+
+`brew.sh` installs a newer bash but doesn't set it up as the default shell
+
+http://clubmate.fi/upgrade-to-bash-4-in-mac-os-x/
+
+Relevant lines:
+
+```bash
+# Add the new shell to the list of allowed shells
+sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+# Change to the new shell
+chsh -s /usr/local/bin/bash
+```
+
 ## Feedback
 
 Suggestions/improvements
